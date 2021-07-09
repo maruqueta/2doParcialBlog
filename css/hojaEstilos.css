@@ -1,0 +1,121 @@
+*
+{
+        background-color: ;
+	margin: 0px;
+	padding: 5px;
+	color: black;
+
+}
+
+#inicioUsusarioLogueado
+{
+        height:20%;
+        background-color:;
+        float:left;
+        width:30%;
+        text-align: center;
+        padding-top: 50px;
+}
+
+#fotoPerfil
+{
+        background-color:;
+	float: left;
+	height: 20%;
+	width: 30%;
+}
+
+#usuariologueado
+{
+        float: right;
+	height:20%;
+        background-color:;
+        width:40%;
+        text-align: center;
+        padding-top: 50px;
+}
+
+
+#banner
+{
+        background-color:#E5BC7A;
+        height:20%;
+}
+
+#inicio
+{
+        height:20%;
+        background-color:;
+        float:left;
+        width:50%;
+}
+
+#usuario
+{
+        height:20%;
+        background-color:;
+        float:right;
+        width:50%;
+        padding-left: 100px;
+        padding-right: 100px;
+}
+
+
+#posts
+{
+
+        background-color:;
+ 
+}
+
+#meses
+{
+        padding-top: 100px;
+        height: 80%;
+        background-color:beige;
+        float:right;
+        width:15%;
+        text-align: center;
+
+}
+
+li{
+	list-style-type: none;
+}
+
+.formularioRegistro
+{
+	margin: 100px;
+        padding: 100px;
+	text-align: center;
+	background:lightblue;
+	border:20px solid #aafdfc;
+}
+
+.cajapost
+{
+        padding: 100px;
+        height:80%;
+        background-color:#BDD2EF;
+        float: left;
+        width:85%;
+        text-align: center;
+        border:20px solid #aafdfc;
+}
+
+.nuevoPostCuerpo
+{
+        padding: 100px;
+        height:80%;
+        background-color:#BDD2EF;
+        width:85%;
+        text-align: center;
+        float: left;
+        border:20px solid #aafdfc;
+
+}
+
+#cuerpoPost
+{
+
+}
