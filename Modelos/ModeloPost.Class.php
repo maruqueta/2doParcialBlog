@@ -11,6 +11,7 @@ class ModeloPost extends Modelo{
 	private $horaPosteo;
 
 	public function CrearPost(){
+
 		$sql = "INSERT INTO posteo (TituloPost,CuerpoPost) VALUES (
 		'{$this -> TituloPost}',
 		'{$this -> CuerpoPost}'
@@ -21,8 +22,8 @@ class ModeloPost extends Modelo{
 
 		if ($this -> conexion -> error) {
 			throw new Exception("error en la creacion del posT");
+			}
 		}
-	}
 
 	public function PaginadoPost($pagina){
 
@@ -45,33 +46,24 @@ class ModeloPost extends Modelo{
 		$fila = array();
 		$fila = $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
 		
-		
-		#ejm2
-		
-	// foreach ($fila){
-			//$p = new ModeloPost();
-			//$p -> TituloPost = $fila['TituloPost'];
-			//$p -> CuerpoPost = $fila['CuerpoPost'];
-			//array_push($fila, $p);
-	//		}
-			return $fila;
+		return $fila;
 		}
 
-		public function ModificarPersona(){
-			$sql = "UPDATE persona set
-			nombre = {$this -> nombre}',
-			apellido = '{$this -> apellido}',
-			edad = '{$this -> edad}',
-			email = '{$this -> email}
-			WHERE nombre = $this -> nombre)";
-			$this -> conexion -> query($sql);
-			
+	public function ModificarPersona(){
+
+		$sql = "UPDATE persona set
+		nombre = {$this -> nombre}',
+		apellido = '{$this -> apellido}',
+		edad = '{$this -> edad}',
+		email = '{$this -> email}
+		WHERE nombre = $this -> nombre)";
+		$this -> conexion -> query($sql);
 		}
 
 		public function EliminarPersona(){
 
-			$sql = "DELETE FROM persona where nombre = '($this -> nombre)'";
-			$this -> conexion -> query($sql);
-			
+		$sql = "DELETE FROM persona where nombre = '($this -> nombre)'";
+		$this -> conexion -> query($sql);
+		
 		}
 	}
