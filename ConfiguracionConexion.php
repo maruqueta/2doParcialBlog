@@ -6,7 +6,3 @@
 	const Nombre_DB ="baseBlog";
 	const Puerto_DB ="3306";
 
-/**
-
-
-**/
