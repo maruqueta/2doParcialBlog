@@ -18,7 +18,7 @@ class ModeloPost extends Modelo{
 		)";		
 		$this -> conexion -> query($sql);
 
-		header("Location: paginaUsuarioLogueado.html");
+		header("Location: paginaUsuarioLogueado.php");
 
 		if ($this -> conexion -> error) {
 			throw new Exception("error en la creacion del posT");
@@ -45,8 +45,7 @@ class ModeloPost extends Modelo{
 		$sql = "SELECT TituloPost,CuerpoPost FROM posteo LIMIT $InicioPagina, $PostPorPagina";
 		$fila = array();
 		$fila = $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
-		
-		return $fila;
+			return $fila;
 		}
 
 	public function ModificarPersona(){
@@ -58,12 +57,13 @@ class ModeloPost extends Modelo{
 		email = '{$this -> email}
 		WHERE nombre = $this -> nombre)";
 		$this -> conexion -> query($sql);
-		}
 
-		public function EliminarPersona(){
+	}
+
+	public function EliminarPersona(){
 
 		$sql = "DELETE FROM persona where nombre = '($this -> nombre)'";
 		$this -> conexion -> query($sql);
 		
-		}
 	}
+}
