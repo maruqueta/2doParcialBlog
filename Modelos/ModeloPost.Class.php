@@ -24,18 +24,30 @@ class ModeloPost extends Modelo{
 		}
 	}
 
-	public function ListarPost(){
-		#ejm1
-		
-		#$sql = "SELECT TituloPost,CuerpoPost FROM posteo";
-		#return $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
-		
-		#ejm2
-		$sql = "SELECT TituloPost,CuerpoPost FROM posteo LIMIT 0, 3";
+	public function PaginadoPost($pagina){
+
+		$PostPorPagina = 3;
+		//$Pagina = 1;
+		$InicioPagina=($pagina-1)*$PostPorPagina;
+		$sql = "SELECT TituloPost,CuerpoPost FROM posteo";
 		$fila = array();
 		$fila = $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
 
+		$NumFilas = count($fila);
+		$TotalPaginas=ceil($NumFilas/$PostPorPagina);
 
+		return array($InicioPagina, $PostPorPagina,$TotalPaginas);
+	} 
+
+	public function ListarPost($InicioPagina, $PostPorPagina){
+		
+		$sql = "SELECT TituloPost,CuerpoPost FROM posteo LIMIT $InicioPagina, $PostPorPagina";
+		$fila = array();
+		$fila = $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
+		
+		
+		#ejm2
+		
 	// foreach ($fila){
 			//$p = new ModeloPost();
 			//$p -> TituloPost = $fila['TituloPost'];

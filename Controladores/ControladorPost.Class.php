@@ -20,10 +20,19 @@ class ControladorPost{
 
 		}
 	}
-	public static function ListadoPost(){
+	public static function ListadoPost($InicioPagina, $PostPorPagina){
 
 			$p = new ModeloPost();
-			return $p -> ListarPost();
+			$p->InicioPagina = $InicioPagina;
+			$p->PostPorPagina = $PostPorPagina;
+			return $p -> ListarPost($InicioPagina, $PostPorPagina);
+
+		}
+	public static function PaginadoPost($pagina){
+
+			$p = new ModeloPost();
+			$p->pagina = $pagina;
+			return $p -> PaginadoPost($pagina);
 
 		}
 }

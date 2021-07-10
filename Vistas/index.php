@@ -46,10 +46,8 @@
 				        require_once('listadoPostGeneral.php');
 				        ?>
 			
-
 				</ul>
-			  	<a href="#" class="previous">&laquo; Anterior</a>
-				<a href="#" class="next">Siguiente &raquo;</a>    
+		  
 			</nav>
 			</div>
 		</div>
