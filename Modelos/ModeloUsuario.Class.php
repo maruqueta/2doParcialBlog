@@ -12,6 +12,9 @@ class ModeloUsuario extends Modelo{
 
 
 	public function CrearUsuario(){
+
+		header("Location: paginaprincipal.html");
+
 		$this -> ContrasenaUsuario = $this -> hashearPassword($this -> ContrasenaUsuario);
 		$sql = "INSERT INTO usuarios(NombreUsuario,ApellidoUsuario,CorreoUsuario,ContrasenaUsuario) VALUES(
 		'{$this -> NombreUsuario}',
@@ -25,6 +28,7 @@ class ModeloUsuario extends Modelo{
 
 			}
 		}
+
 	public function generarLogueo(){
 
 		$sql = "SELECT IdUsuario FROM usuarios WHERE NombreUsuario =
@@ -40,7 +44,6 @@ class ModeloUsuario extends Modelo{
 			}
 		}
 	
-
 	private function hashearPassword($ContrasenaUsuario){
     	return password_hash($ContrasenaUsuario,PASSWORD_DEFAULT);
     }

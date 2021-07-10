@@ -39,17 +39,14 @@
 		</div>
 		<div class="cajapost">
 			<div id="posts">
+			<nav>
 			  	<ul class="">
-			   	    <h2>Listado POSTS</h2>
-				    <table>
-				        <tr>
-				            <td> Titulo </td>
-				            <td> Post </td>
-				        </tr>
-				        <tr>
-				          	<a href="listadoPostGeneral.php"></a>
-				        </tr>
-				    </table>
+				   	    <h2>Listado POSTS</h2>
+			            <?php
+				        require_once('listadoPostGeneral.php');
+				        ?>
+			
+
 				</ul>
 			  	<a href="#" class="previous">&laquo; Anterior</a>
 				<a href="#" class="next">Siguiente &raquo;</a>    
