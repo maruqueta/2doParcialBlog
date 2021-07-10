@@ -1,4 +1,3 @@
-
 <?php
 
 require '../Modelos/ModeloPost.Class.php';	
