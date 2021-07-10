@@ -43,9 +43,11 @@
                	</div>
                 <input type="password" name="ContrasenaUsuario" class="form-control" id="clave" maxlength="20" minlength="2" required pattern="[A-Za-z0-9]+" placeholder="Contraseña" required>
             </div>
-            <div>
+           	<div>
+				<input type="hidden" name="MAX_TAM" value="2097152">
 				<label>Selecionar Foto de Perfil</label>
-				<input type="file" name="FotoPerfil">
+				</br>Selecciona una imagen con tamaño inferior a 2 MB
+				<input type="file" name="FotoPerfil" id="FotoPerfil">
 			</div>
 			<div class="form-group">
   				<button type="submit" class="btn btn-default">Registrarse
