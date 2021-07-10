@@ -62,7 +62,7 @@ class ModeloUsuario extends Modelo{
 		}
 
 		if ($contador>0){
-			header("Location: paginaUsuarioLogueado.html");
+			header("Location: paginaUsuarioLogueado.php");
 		}else{
 			echo "Usuario no existe o password errado";
 			}
@@ -70,6 +70,6 @@ class ModeloUsuario extends Modelo{
 	
 	private function hashearPassword($ContrasenaUsuario){
 
-    	return password_hash($ContrasenaUsuario,PASSWORD_DEFAULT);
+    	return password_hash($ContrasenaUsuario,PASSWORD_DEFAULT, array("cost"=>12));
     }
 }

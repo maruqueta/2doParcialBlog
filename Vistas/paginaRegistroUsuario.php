@@ -57,10 +57,10 @@
 				<input type="file" name="FotoPerfil" id="FotoPerfil">
 			</div>
 			<div class="form-group">
-  				<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.html';">Registrarse
+  				<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Registrarse
   				</button>
   				 </form>
-            	<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.html';">Cancelar
+            	<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Cancelar
             	</button> 
             </div>
        
