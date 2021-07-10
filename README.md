@@ -15,9 +15,10 @@
 #CREATE TABLE `usuarios` (
 #  `IdUsuario` bigint(20) UNSIGNED NOT NULL,
 #  `NombreUsuario` varchar(20) NOT NULL,
-# `ApellidoUsuario` varchar(30) NOT NULL,
+#   ApellidoUsuario` varchar(30) NOT NULL,
 #  `CorreoUsuario` varchar(30) NOT NULL,
 #  `ContrasenaUsuario` varchar(40) NOT NULL,
+# 	usuario varchar (20) NOT NULL,
 #  `FotoPerfil` varchar(40) DEFAULT NULL
 #) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 #

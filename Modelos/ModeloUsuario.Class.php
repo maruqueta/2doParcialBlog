@@ -39,7 +39,6 @@ class ModeloUsuario extends Modelo{
 		$existe = $this -> conexion -> query($sql);
 		
 		foreach ($existe -> fetch_all(MYSQLI_ASSOC) as $contador ){
-
 			if ($contador['contador']>0){
 				return true;
 			}else{
