@@ -20,6 +20,7 @@ class ControladorPost{
 
 		}
 	}
+
 	public static function ListadoPost($InicioPagina, $PostPorPagina){
 
 			$p = new ModeloPost();
@@ -28,6 +29,7 @@ class ControladorPost{
 			return $p -> ListarPost($InicioPagina, $PostPorPagina);
 
 		}
+
 	public static function PaginadoPost($pagina){
 
 			$p = new ModeloPost();
@@ -36,4 +38,3 @@ class ControladorPost{
 
 		}
 }
-
