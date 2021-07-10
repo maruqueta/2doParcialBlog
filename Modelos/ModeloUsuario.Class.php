@@ -34,11 +34,13 @@ class ModeloUsuario extends Modelo{
 		$sql = "SELECT IdUsuario FROM usuarios WHERE NombreUsuario =
 		'{$this -> NombreUsuario}' and ContrasenaUsuario ='{$this -> ContrasenaUsuario}'";
 
+
+
 		$existe = $this -> conexion -> query($sql);		
 		$si=mysqli_num_rows($existe);
 
 		if($si === 1){
-			header("Location: paginaUsuarioLogueado.html");
+			header("Location: paginaUsuarioLogueado.php");
 			}else{
 				echo "no existe el usuario";
 			}
@@ -47,4 +49,8 @@ class ModeloUsuario extends Modelo{
 	private function hashearPassword($ContrasenaUsuario){
     	return password_hash($ContrasenaUsuario,PASSWORD_DEFAULT);
     }
+
+    private function compararPasswords($passwordHasheado){
+            return password_verify($this -> password, $passwordHasheado);
+}
 }

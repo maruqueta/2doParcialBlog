@@ -14,7 +14,7 @@
 		if(isset($_GET["pagina"])){
 
 			if ($_GET["pagina"]==1){
-				header("Location:index.php");
+				header("Location:paginaprincipal.php");
 			}else{
 				$pagina=$_GET["pagina"];
 			}

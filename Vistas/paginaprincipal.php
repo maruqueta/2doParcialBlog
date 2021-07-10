@@ -32,23 +32,20 @@
             <div>
             	<button type="submit" class="btn btn-default">INICIO SESION</button> 
             </form>
-            	<button type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.html';">Registrarse</button>
+            	<button type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.php';">Registrarse</button>
             </div>
 		</div>
 	
 		</div>
 		<div class="cajapost">
 			<div id="posts">
-			<nav>
-			  	<ul class="">
-				   	    <h2>Listado POSTS</h2>
-			            <?php
-				        require_once('listadoPostGeneral.php');
-				        ?>
-			
+		  		<ul class="">
+				   	<h2>Listado POSTS</h2>
+			        <?php
+				    	require_once('listadoPostGeneral.php');
+				   	?>
 				</ul>
-		  
-			</nav>
+			</div>
 			</div>
 		</div>
 		<div id ="meses">

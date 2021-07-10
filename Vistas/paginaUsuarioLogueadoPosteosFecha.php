@@ -12,9 +12,9 @@
 		<div class="contenido">
 			<div id="banner">
 			<div id=inicioUsusarioLogueado>
-				<a href="paginaUsuarioLogueadoPosteosFecha.html">BLOG</a>
+				<a href="paginaUsuarioLogueadoPosteosFecha.php">BLOG</a>
 				<br>
-				<a href="paginaNuevoPost.html">NUEVO POST</a>
+				<a href="paginaNuevoPost.php">NUEVO POST</a>
 			</div>
 			<div id=fotoPerfil>
 			
@@ -24,18 +24,17 @@
 				<br>
 				<label>Perfil</label>
 				<br>
-       			<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.html';">Cerrar Sesion</button> 
+       			<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Cerrar Sesion</button> 
 			</div>
 			</div>
 			<div class="cajapost">
 			<div class="cajapost">
 			<div id="posts">
-		  	<ul class="">
-				   	    <h2>Listado POSTS</h2>
-			            <?php
-				        require_once('listadoPostGeneral.php');
-				        ?>
-			
+		  		<ul class="">
+				   	<h2>Listado POSTS</h2>
+			        <?php
+				    	require_once('listadoPostGeneral.php');
+				   	?>
 				</ul>
 			</div>
 		</div>

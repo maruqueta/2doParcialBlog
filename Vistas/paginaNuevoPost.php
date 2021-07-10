@@ -12,7 +12,7 @@
 		<div class="contenido">
 			<div id="banner">
 			<div id=inicioUsusarioLogueado>
-				<a href="paginaUsuarioLogueadoPosteosFecha.html">BLOG</a>
+				<a href="paginaUsuarioLogueadoPosteosFecha.php">BLOG</a>
 				<br>
 				<a href="paginaNuevoPost.html">NUEVO POST</a>
 			</div>
@@ -24,22 +24,27 @@
 				<br>
 				<label>Perfil</label>
 				<br>
-       			<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.html';">Cerrar Sesion</button> 
+       			<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Cerrar Sesion</button> 
 			</div>
 			</div>
-			<div class="cajapost">
-			<div class="cajapost">
-			<div id="posts">
-		  	<ul class="">
-				   	    <h2>Listado POSTS</h2>
-			            <?php
-				        require_once('listadoPostGeneral.php');
-				        ?>
-			
-				</ul>
+			<div class="nuevoPostCuerpo">
+				<form id="formularioRegistroPost" action="formularioRegistroPost.php" method="post">
+					<div> 
+						<div>
+			                <input type="text" class="form-control" id="idtitulopost" name="TituloPost" maxlength="20" minlength="2" placeholder="TITULO" style="border:5px solid #f6f6f6" required>
+			            </div>
+						<div id="cuerpoPost">
+			  				<textarea type="text" class="form-control" name="CuerpoPost" maxlength="1000" minlength="2" placeholder="POST"  required></textarea>
+						</div>
+						<div class="form-group">
+			  				<button type="submit" class="btn btn-default">POSTEAR
+			  				</button>
+			            	<button type="submit" class="btn btn-default" onclick="location.href='paginaUsuarioLogueado.php';">CANCELAR
+			            	</button> 
+			            </div>
+		        </div>
+				</form>
 			</div>
-		</div>
-		</div>
 			<div id ="meses">
 				<ul id="listameses">
 					<li><a href="">Enero</a></li>
