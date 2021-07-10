@@ -20,7 +20,7 @@
 			case 4:
 					$creado = ControladorUsuario::AltaUsuario($_POST['NombreUsuario'],$_POST['ApellidoUsuario'],$_POST['CorreoUsuario'],$_POST['ContrasenaUsuario'], $_POST['Usuario'], "");
 					if ($creado){
-						echo "<script>alert('Usuario registrado con éxito');window.location= 'paginaprincipal.html'</script>";
+						echo "<script>alert('Usuario registrado con éxito');window.location= 'paginaprincipal.php'</script>";
 					}else{
 						echo "<script>alert('Usuario no se pudo registrar, ingrese otro usuario');window.history.back()</script>";
 					}
@@ -34,7 +34,7 @@
 			$creado = ControladorUsuario::AltaUsuario($_POST['NombreUsuario'],$_POST['ApellidoUsuario'],$_POST['CorreoUsuario'],$_POST['ContrasenaUsuario'], $_POST['Usuario'], $_FILES['FotoPerfil']['name']);
 			if ($creado){
 				move_uploaded_file($_FILES['FotoPerfil']['tmp_name'], $ruta_imagen);
-				echo "<script>alert('Usuario registrado con éxito');window.location= 'paginaprincipal.html'</script>";
+				echo "<script>alert('Usuario registrado con éxito');window.location= 'paginaprincipal.php'</script>";
 			}else{
 				echo "<script>alert('Usuario no se pudo registrar, ingrese otro usuario');window.history.back()</script>";
 				}
