@@ -31,7 +31,7 @@ class ModeloPost extends Modelo{
 		#return $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
 		
 		#ejm2
-		$sql = "SELECT TituloPost,CuerpoPost FROM posteo";
+		$sql = "SELECT TituloPost,CuerpoPost FROM posteo LIMIT 0, 3";
 		$fila = array();
 		$fila = $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
 
