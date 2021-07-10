@@ -20,4 +20,11 @@ class ControladorPost{
 
 		}
 	}
+	public static function ListadoPost(){
+
+			$p = new ModeloPost();
+			return $p -> ListarPost();
+
+		}
 }
+
