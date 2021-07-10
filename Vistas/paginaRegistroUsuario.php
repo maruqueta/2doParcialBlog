@@ -19,23 +19,30 @@
                 <div class="input-group-addon">
                 	<div class="glyphicon glyphicon-user">
                 	</div>
-           		</div> 
-                <input type="text" class="form-control" name="NombreUsuario" id="nombreUsuario" maxlength="20" minlength="4" placeholder="Nombre" required>
+           			</div> 
+                <input type="text" class="form-control" name="NombreUsuario" id="nombreUsuario" maxlength="20" minlength="4" placeholder="Nombres" required>
             </div>
             <div class="input-group">
                 <div class="input-group-addon">
                 	<div class="glyphicon glyphicon-user">
                 	</div>
            		</div> 
-                <input type="text" class="form-control" name="ApellidoUsuario" id="apellidoUsuario" maxlength="20" minlength="4" placeholder="Apellido" required>
+                <input type="text" class="form-control" name="ApellidoUsuario" id="apellidoUsuario" maxlength="20" minlength="4" placeholder="Apellidos" required>
             </div>
 			<div class="input-group">
-				<div class="input-group-addon">
-					<div class="glyphicon glyphicon-envelope">
-					</div>
-				</div> 
+                	<div class="input-group-addon">
+                	<div class="glyphicon glyphicon-envelope">
+                	</div>
+           			</div> 
   				<input type="email" name="CorreoUsuario" class="form-control" id="campoemail" placeholder="E-mail" required>
 			</div>
+            <div class="input-group">
+                <div class="input-group-addon">
+                	<div class="glyphicon glyphicon-user">
+                	</div>
+           		</div> 
+                <input type="text" class="form-control" name="Usuario" id="Usuario" maxlength="20" minlength="4" placeholder="Usuario" required>
+            </div>
 			<div class="input-group">
                 <div class="input-group-addon">
                 	<div class="glyphicon glyphicon-lock">
@@ -43,19 +50,20 @@
                	</div>
                 <input type="password" name="ContrasenaUsuario" class="form-control" id="clave" maxlength="20" minlength="2" required pattern="[A-Za-z0-9]+" placeholder="Contraseña" required>
             </div>
-           	<div>
+            <div>
 				<input type="hidden" name="MAX_TAM" value="2097152">
 				<label>Selecionar Foto de Perfil</label>
 				</br>Selecciona una imagen con tamaño inferior a 2 MB
 				<input type="file" name="FotoPerfil" id="FotoPerfil">
 			</div>
 			<div class="form-group">
-  				<button type="submit" class="btn btn-default">Registrarse
+  				<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.html';">Registrarse
   				</button>
-            	<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Cancelar
+  				 </form>
+            	<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.html';">Cancelar
             	</button> 
             </div>
-        </form>
+       
 	</div>
 </body>
 </html>
