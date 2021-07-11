@@ -13,6 +13,7 @@
 			<div id=inicio>
 				<img src="" title="BLOG">
 			</div>
+			<button style="float: right" type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.php';">Registrarse</button>
 			<div>
 				<form id="formulario" action="formularioLogueoUsuario.php" method="post">
 							<div id=usuario>
@@ -31,9 +32,7 @@
 					                <input type="password" class="form-control" id="clave" name="ContrasenaUsuario" maxlength="20" minlength="4" required pattern="[A-Za-z0-9]+" placeholder="contraseña" required>
 					      		</div>
 					            <div>
-					            	<button type="submit" class="btn btn-default">INICIO SESION</button>     	
-						
-					<button style="float: right" type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.php';">Registrarse</button>
+					            	<button type="submit" class="btn btn-default">INICIO SESION</button>    
 					</div>
 					</form>
 					</div>
