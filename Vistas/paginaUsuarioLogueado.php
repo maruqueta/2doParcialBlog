@@ -40,30 +40,38 @@
 			<div id="posts">
 			<nav>
 			  	<ul class="">
-				   	    <h2>Listado POSTS</h2>
-
-			            <?php
-				        	require_once('listadoPostUsuario.php');
-				        	?>
+				   	<h2 style="float: left">Mis Posteos</h2>
+				  	</br>
+				  	</br>
+				  	</br>
+			        <?php
+				    	require_once('listadoPostUsuario.php');
+				   	?>
+				</ul>
 				</ul>
 			</nav>
 			</div>
 		</div>
 			<div id ="meses">
-				<ul id="listameses">
-					<li><a href="">Enero</a></li>
-					<li><a href="">Febredo</a></li>
-					<li><a href="">Marzo</a></li>
-					<li><a href="">Abril</a></li>
-					<li><a href="">Mayo</a></li>
-					<li><a href="">Junio</a></li>
-					<li><a href="">Julio</a></li>
-					<li><a href="">Agosto</a></li>
-					<li><a href="">Setiembre</a></li>
-					<li><a href="">Octubre</a></li>
-					<li><a href="">Noviembre</a></li>
-					<li><a href="">Diciembre</a></li>
-				</ul>	
+				 <form id="listadoPostMesesUsuario" action="listadoPostMesesUsuario.php" method="post">
+					<a href="paginaUsuarioLogueado.php">[Ver Todos]</a></br></br>
+					Mis Post por mes:
+						<ul id="listameses">	
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=1">Enero</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=2">Febrero</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=3">Marzo</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=4">Abril</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=5">Mayo</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=6">Junio</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=7">Julio</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=8">Agosto</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=9">Septiembre</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=10">Octubre</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=11">Noviembre</a></br>
+						<a href="paginaPostMesesUsuarioLogueado.php?mes=12">Diciembre</a></br>
+						</br>
+					</ul>
+				</form>
 			</div>
 		</div>
 	</body>
