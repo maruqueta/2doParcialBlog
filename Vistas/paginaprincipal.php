@@ -31,11 +31,12 @@
 					                <input type="password" class="form-control" id="clave" name="ContrasenaUsuario" maxlength="20" minlength="4" required pattern="[A-Za-z0-9]+" placeholder="contraseña" required>
 					      		</div>
 					            <div>
-					            	<button type="submit" class="btn btn-default">INICIO SESION</button> 
-					            </div>
-					      	</div>
-						</form>
+					            	<button type="submit" class="btn btn-default">INICIO SESION</button>     	
+						
 					<button style="float: right" type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.php';">Registrarse</button>
+					</div>
+					</form>
+					</div>
 				</div>
 			</div>
 			<div class="cajapost">
@@ -53,20 +54,25 @@
 			</div>
 		</div>
 		<div id ="meses">
-			<ul id="listameses">
-				<li><a href="">Enero</a></li>
-				<li><a href="">Febredo</a></li>
-				<li><a href="">Marzo</a></li>
-				<li><a href="">Abril</a></li>
-				<li><a href="">Mayo</a></li>
-				<li><a href="">Junio</a></li>
-				<li><a href="">Julio</a></li>
-				<li><a href="">Agosto</a></li>
-				<li><a href="">Setiembre</a></li>
-				<li><a href="">Octubre</a></li>
-				<li><a href="">Noviembre</a></li>
-				<li><a href="">Diciembre</a></li>
-			</ul>	
+			<form id="listadoPostMeses" action="listadoPostMeses.php" method="post">
+		<div id ="meses">
+		<ul id="listameses">
+		Busqueda por Meses:</br></br>
+				<a href="paginaPostMeses.php?mes=1">Enero</a></br>
+				<a href="paginaPostMeses.php?mes=2">Febrero</a></br>
+				<a href="paginaPostMeses.php?mes=3">Marzo</a></br>
+				<a href="paginaPostMeses.php?mes=4">Abril</a></br>
+				<a href="paginaPostMeses.php?mes=5">Mayo</a></br>
+				<a href="paginaPostMeses.php?mes=6">Junio</a></br>
+				<a href="paginaPostMeses.php?mes=7">Julio</a></br>
+				<a href="paginaPostMeses.php?mes=8">Agosto</a></br>
+				<a href="paginaPostMeses.php?mes=9">Septiembre</a></br>
+				<a href="paginaPostMeses.php?mes=10">Octubre</a></br>
+				<a href="paginaPostMeses.php?mes=11">Noviembre</a></br>
+				<a href="paginaPostMeses.php?mes=12">Diciembre</a></br>
+			</ul>
 		</div>
+		</form>
+	</div>
 </body>
 </html>
