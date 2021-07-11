@@ -9,6 +9,12 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	</head>
 	<body>
+		<?php
+		session_start();
+		if(!isset($_SESSION["usuario"])){
+			header("Location:paginaprincipal.php");
+		}
+		?>
 		<div class="contenido">
 			<div id="banner">
 			<div id=inicioUsusarioLogueado>
@@ -20,9 +26,7 @@
 			
 			</div>
 			<div id=usuariologueado>
-				<label>USUARIO</label>
-				<br>
-				<label>Perfil</label>
+				<?php echo "Usuario: " . $_SESSION["usuario"];?>
 				<br>
        			<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Cerrar Sesion</button> 
 			</div>
