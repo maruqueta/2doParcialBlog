@@ -8,7 +8,7 @@ class ModeloPost extends Modelo{
 	public $IdAutor;
 	public $TituloPost;
 	public $CuerpoPost;
-	private $horaPosteo;
+	public $horaPosteo;
 
 	public function CrearPost(){
 
@@ -30,7 +30,7 @@ class ModeloPost extends Modelo{
 		$PostPorPagina = 3;
 		//$Pagina = 1;
 		$InicioPagina=($pagina-1)*$PostPorPagina;
-		$sql = "SELECT TituloPost,CuerpoPost FROM posteo";
+		$sql = "SELECT TituloPost, CuerpoPost FROM posteo";
 		$fila = array();
 		$fila = $this -> conexion -> query($sql) -> fetch_all(MYSQLI_ASSOC);
 

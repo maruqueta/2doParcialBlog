@@ -10,33 +10,38 @@
 <body>
 	<div class="contenido">
 		<div id="banner">
-		<div id=inicio>
-			<img src="" title="BLOG">
-		</div>
-		<form id="formulario" action="formularioLogueoUsuario.php" method="post">
-		<div id=usuario>
-			<div class="input-group">
-				<div class="input-group-addon">
-					<div class="glyphicon glyphicon-envelope">
-					</div>
-				</div> 
-  				<input type="text" class="form-control" id="login" name="NombreUsuario" "placeholder="e-mail o usuario" required>
+			<div id=inicio>
+				<img src="" title="BLOG">
 			</div>
-			<div class="input-group">
-                <div class="input-group-addon">
-                	<div class="glyphicon glyphicon-lock">
-                	</div>
-                </div> 
-                <input type="password" class="form-control" id="clave" name="ContrasenaUsuario" maxlength="20" minlength="4" required pattern="[A-Za-z0-9]+" placeholder="contraseña" required>
-            </div>
-            <div>
-            	<button type="submit" class="btn btn-default">INICIO SESION</button> 
-            </form>
-            	<button type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.php';">Registrarse</button>
-            </div>
-		</div>
-	
-		</div>
+			<form id="formulario" action="formularioLogueoUsuario.php" method="post">
+			<div id=usuario>
+				<div class="input-group">
+					<div class="input-group-addon">
+						<div class="glyphicon glyphicon-envelope">
+						</div>
+					</div> 
+	  				<input type="text" class="form-control" id="login" name="NombreUsuario" placeholder="e-mail o usuario" required>
+				</div>
+				<div class="input-group">
+	                <div class="input-group-addon">
+	                	<div class="glyphicon glyphicon-lock">
+	                	</div>
+	                </div> 
+	                <input type="password" class="form-control" id="clave" name="ContrasenaUsuario" maxlength="20" minlength="4" required pattern="[A-Za-z0-9]+" placeholder="contraseña" required>
+	            </div>
+	            <div>
+	            	<button type="submit" class="btn btn-default">INICIO SESION</button> 
+	            </div>
+				</div>	
+			</form>
+			<form style="float: right;">
+		<div>
+			<button type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.php';">REGISTRARSE</button>	
+			</div>
+		</form>
+	</div>
+	</div>
+	</div>
 		<div class="cajapost">
 			<div id="posts">
 		  		<ul class="">

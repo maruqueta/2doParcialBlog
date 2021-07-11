@@ -1,8 +1,6 @@
 <?php
 	require '../Controladores/ControladorPost.class.php';
 
-		echo "TITULO - POST <br>";
-
 		if(isset($_GET["pagina"])){
 
 			if ($_GET["pagina"]==1){
@@ -18,7 +16,7 @@
 
 		foreach ( ControladorPost::ListadoPost($InicioPagina, $PostPorPagina) as $fila){
 			//echo $fila -> TituloPost . " - " . $fila -> CuerpoPost . "<br>";
-		echo "<h3>" ."<a href='www.google.com'> ". $fila['TituloPost'] ."</h3> ". "</a> "." - " . $fila['CuerpoPost'] ." ++++ "."<br>";
+		echo "<h3>" . $fila['TituloPost'] ."</h3> ". "</a> "." - " . $fila['CuerpoPost'] ." ++++ "."<br>";
 		echo "<hr/>";
 
 		}

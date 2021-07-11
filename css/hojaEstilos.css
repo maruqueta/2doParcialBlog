@@ -29,7 +29,6 @@
 {
         float: right;
 	height:20%;
-        background-color:;
         width:40%;
         text-align: center;
         padding-top: 50px;
@@ -60,6 +59,10 @@
         padding-right: 100px;
 }
 
+#botonRegistrarse
+{
+        float: left;
+}
 
 #posts
 {
@@ -94,13 +97,12 @@ li{
 
 .cajapost
 {
-        padding: 100px;
+        padding: 20px;
         height:80%;
         background-color:#BDD2EF;
         float: left;
         width:85%;
         text-align: center;
-        border:20px solid #aafdfc;
 }
 
 .nuevoPostCuerpo
