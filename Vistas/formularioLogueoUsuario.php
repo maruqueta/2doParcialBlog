@@ -9,3 +9,16 @@ require '../Controladores/ControladorUsuario.class.php';
 	}else(
 
 		)*/
+	if (empty($intentoLogueo))
+	{
+		echo "<script>alert('Usuario no existe o password errado');window.history.back()</script>";
+	}else{
+		session_start();
+			$_SESSION["usuario"]=$_POST['NombreUsuario'];
+			$_SESSION["idUsuario"] = $intentoLogueo['IdUsuario'];
+			$_SESSION["NombreUsuario"]= $intentoLogueo['NombreUsuario'];
+			$_SESSION["ApellidoUsuario"]= $intentoLogueo['ApellidoUsuario'];
+			$_SESSION["CorreoUsuario"]= $intentoLogueo['CorreoUsuario'];
+			$_SESSION["FotoPerfil"]= $intentoLogueo['FotoPerfil'];
+		header("Location: paginaUsuarioLogueado.php");
+	}
