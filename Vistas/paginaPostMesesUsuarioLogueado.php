@@ -38,41 +38,34 @@
 			</div>
 			<div class="cajapost">
 			<div id="posts">
-			<nav>
 			  	<ul class="">
-				   	<h2 style="float: left">Mis Posteos</h2>
-				  	</br>
-				  	</br>
-				  	</br>
-			        <?php
-				    	require_once('listadoPostUsuario.php');
-				   	?>
+				   	    <h2>Mis Posts</h2>
+			            <?php
+			            require_once('listadoPostMesesUsuario.php');
+				        	?>
 				</ul>
-				</ul>
-			</nav>
 			</div>
-		</div>
+		<form id="listadoPostMeses" action="listadoPostMeses.php" method="post">
 			<div id ="meses">
-				 <form id="listadoPostMesesUsuario" action="listadoPostMesesUsuario.php" method="post">
-					<a href="paginaUsuarioLogueado.php">[Ver Todos]</a></br></br>
-					Mis Post por mes:
-						<ul id="listameses">	
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=1">Enero</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=2">Febrero</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=3">Marzo</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=4">Abril</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=5">Mayo</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=6">Junio</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=7">Julio</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=8">Agosto</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=9">Septiembre</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=10">Octubre</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=11">Noviembre</a></br>
-						<a href="paginaPostMesesUsuarioLogueado.php?mes=12">Diciembre</a></br>
-						</br>
-					</ul>
-				</form>
+				Mis Post por mes:
+				<ul id="listameses">
+				
+					<a href="?mes=1">Enero</a></br>
+					<a href="?mes=2">Febrero</a></br>
+					<a href="?mes=3">Marzo</a></br>
+					<a href="?mes=4">Abril</a></br>
+					<a href="?mes=5">Mayo</a></br>
+					<a href="?mes=6">Junio</a></br>
+					<a href="?mes=7">Julio</a></br>
+					<a href="?mes=8">Agosto</a></br>
+					<a href="?mes=9">Septiembre</a></br>
+					<a href="?mes=10">Octubre</a></br>
+					<a href="?mes=11">Noviembre</a></br>
+					<a href="?mes=12">Diciembre</a></br>
+					</br>
+					<a href="paginaUsuarioLogueado.php">[Ver Todos]</a></br>
+				</ul>
 			</div>
-		</div>
+		</form>
 	</body>
 </html>

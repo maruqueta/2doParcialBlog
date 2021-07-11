@@ -1,4 +1,3 @@
-
 <?php
 
 require '../Modelos/ModeloUsuario.Class.php';
@@ -26,14 +25,29 @@ class ControladorUsuario{
 	{
 	try {
 		$usuario = new ModeloUsuario();
-		$usuario -> NombreUsuario = $NombreUsuario;
+		$usuario -> Usuario = $NombreUsuario;
 		$usuario -> ContrasenaUsuario = $ContrasenaUsuario;
-		$usuario -> generarLogueo();
+		return $usuario -> generarLogueo();
 	} catch (Exception $e) {
 				return $e -> getMessage();
 		}
-	return false;
 	}
 
+	public static function ActualizaUsuario($Usuario, $NombreUsuario,$ApellidoUsuario,$CorreoUsuario,$ContrasenaUsuario, $FotoPerfil)
+	{
+	try {
+		$usuario = new ModeloUsuario();
+		$usuario -> NombreUsuario = $NombreUsuario;
+		$usuario -> ApellidoUsuario = $ApellidoUsuario;
+		$usuario -> CorreoUsuario = $CorreoUsuario;
+		$usuario -> ContrasenaUsuario = $ContrasenaUsuario;
+		$usuario -> Usuario = $Usuario;
+		$usuario -> FotoPerfil = $FotoPerfil;
+		//$usuario -> CrearUsuario();
+		return $usuario -> ActualizaUsuario();
+	} catch (Exception $e) {
+		return $e -> getMessage();
+		}
+	}
 
 }
