@@ -13,44 +13,43 @@
 			<div id=inicio>
 				<img src="" title="BLOG">
 			</div>
-			<form id="formulario" action="formularioLogueoUsuario.php" method="post">
-			<div id=usuario>
-				<div class="input-group">
-					<div class="input-group-addon">
-						<div class="glyphicon glyphicon-envelope">
-						</div>
-					</div> 
-	  				<input type="text" class="form-control" id="login" name="NombreUsuario" placeholder="e-mail o usuario" required>
+			<div>
+				<form id="formulario" action="formularioLogueoUsuario.php" method="post">
+							<div id=usuario>
+								<div class="input-group">
+									<div class="input-group-addon">
+										<div class="glyphicon glyphicon-envelope">
+										</div>
+									</div> 
+					  				<input type="text" class="form-control" id="login" name="NombreUsuario" placeholder="e-mail o usuario" required>
+								</div>
+								<div class="input-group">
+					                <div class="input-group-addon">
+					                	<div class="glyphicon glyphicon-lock">
+					                	</div>
+					                </div> 
+					                <input type="password" class="form-control" id="clave" name="ContrasenaUsuario" maxlength="20" minlength="4" required pattern="[A-Za-z0-9]+" placeholder="contraseña" required>
+					      		</div>
+					            <div>
+					            	<button type="submit" class="btn btn-default">INICIO SESION</button> 
+					            </div>
+					      	</div>
+						</form>
+					<button style="float: right" type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.php';">Registrarse</button>
 				</div>
-				<div class="input-group">
-	                <div class="input-group-addon">
-	                	<div class="glyphicon glyphicon-lock">
-	                	</div>
-	                </div> 
-	                <input type="password" class="form-control" id="clave" name="ContrasenaUsuario" maxlength="20" minlength="4" required pattern="[A-Za-z0-9]+" placeholder="contraseña" required>
-	            </div>
-	            <div>
-	            	<button type="submit" class="btn btn-default">INICIO SESION</button> 
-	            </div>
-				</div>	
-			</form>
-			<form style="float: right;">
-		<div>
-			<button type="submit" class="btn btn-default" onclick="location.href='paginaRegistroUsuario.php';">REGISTRARSE</button>	
 			</div>
-		</form>
-	</div>
-	</div>
-	</div>
-		<div class="cajapost">
-			<div id="posts">
-		  		<ul class="">
-				   	<h2>Listado POSTS</h2>
-			        <?php
-				    	require_once('listadoPostGeneral.php');
-				   	?>
-				</ul>
-			</div>
+			<div class="cajapost">
+				<div id="posts">
+			  		<ul class="">
+					  <h2 style="float: left">Listado de Post</h2></br>
+					  	</br>
+					  	</br>
+					  	</br>
+				        <?php
+					    	require_once('listadoPostGeneral.php');
+					   	?>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div id ="meses">
@@ -69,6 +68,5 @@
 				<li><a href="">Diciembre</a></li>
 			</ul>	
 		</div>
-	</div>
 </body>
 </html>
