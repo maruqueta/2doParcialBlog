@@ -13,7 +13,7 @@
         background-color:;
         float:left;
         width:30%;
-        text-align: center;
+        text-align: top;
         padding-top: 50px;
 }
 
@@ -27,8 +27,8 @@
 
 #usuariologueado
 {
-        float: right;
-	height:20%;
+        float: left;
+	height:10%;
         width:40%;
         text-align: center;
         padding-top: 50px;
@@ -110,7 +110,7 @@ li{
         padding: 100px;
         height:80%;
         background-color:#BDD2EF;
-        width:60%;
+        width:85%;
         text-align: center;
         float: left;
         border:20px solid #aafdfc;
