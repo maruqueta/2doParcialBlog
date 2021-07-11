@@ -9,6 +9,12 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	</head>
 	<body>
+		<?php
+		session_start();
+		if(!isset($_SESSION["usuario"])){
+			header("Location:paginaprincipal.php");
+			}
+		?>
 		<div class="contenido">
 			<div id="banner">
 			<div id=inicioUsusarioLogueado>
@@ -20,24 +26,28 @@
 			
 			</div>
 			<div id=usuariologueado>
-				<label>USUARIO</label>
-				<br>
-				<label>Perfil</label>
-				<br>
-       			<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Cerrar Sesion</button> 
+				<label><?php echo "Usuario: " . $_SESSION["usuario"]; 
+							if ($_SESSION["FotoPerfil"]!=""){
+								echo "<img src='../imagenes/". $_SESSION["usuario"]. ".jpg' width='100px'/>";
+								}
+					
+					?></label>
+       			<button type="submit" class="btn btn-default" onclick="location.href='paginaModificaUsuario.php';">Actualizar Usuario</button> 
+       			<button type="submit" class="btn btn-default" onclick="location.href='cierra.php';">Cerrar Sesion</button> 
 			</div>
 			</div>
-			<div class="cajapost">
 			<div class="cajapost">
 			<div id="posts">
-		  		<ul class="">
-				   	<h2>Listado POSTS</h2>
-			        <?php
-				    	require_once('listadoPostGeneral.php');
-				   	?>
+			<nav>
+			  	<ul class="">
+				   	    <h2>Listado POSTS</h2>
+
+			            <?php
+				        	require_once('listadoPostUsuario.php');
+				        	?>
 				</ul>
+			</nav>
 			</div>
-		</div>
 		</div>
 			<div id ="meses">
 				<ul id="listameses">
