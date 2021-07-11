@@ -55,7 +55,7 @@
 		</div>
 		<div id ="meses">
 			<form id="listadoPostMeses" action="listadoPostMeses.php" method="post">
-		<div id ="meses">
+	
 		<ul id="listameses">
 		Busqueda por Meses:</br></br>
 				<a href="paginaPostMeses.php?mes=1">Enero</a></br>
@@ -70,7 +70,7 @@
 				<a href="paginaPostMeses.php?mes=10">Octubre</a></br>
 				<a href="paginaPostMeses.php?mes=11">Noviembre</a></br>
 				<a href="paginaPostMeses.php?mes=12">Diciembre</a></br>
-			</ul>
+		</ul>
 		</div>
 		</form>
 	</div>
