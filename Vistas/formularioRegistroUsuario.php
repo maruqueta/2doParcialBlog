@@ -14,7 +14,7 @@
 			
 			case 3:
 				echo "<script>alert('Envio de archivo interrumpido, vuelva a intentar'); window.history.back()</script>";
-				break;
+			break;
 
 			case 4:
 				$creado = ControladorUsuario::AltaUsuario($_POST['NombreUsuario'],$_POST['ApellidoUsuario'],$_POST['CorreoUsuario'],$_POST['ContrasenaUsuario'], $_POST['Usuario'], "");
@@ -23,10 +23,8 @@
 				}else{
 				echo "<script>alert('Usuario no se pudo registrar, ingrese otro usuario');window.history.back()</script>";
 					}
-					
 			break;
 		}
-		
 	}else{
 		if((isset($_FILES['FotoPerfil']['name']) && ($_FILES['FotoPerfil']['error']==UPLOAD_ERR_OK))){
 			//$destination_path = getcwd().DIRECTORY_SEPARATOR . "imagenes\ ";
@@ -41,5 +39,4 @@
 		}else{
 			echo "<script>alert('Archivo de image no se ha cargado correctamente ');window.history.back()</script>";
 			}
-			
 		}

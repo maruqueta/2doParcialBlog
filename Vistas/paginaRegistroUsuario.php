@@ -59,11 +59,12 @@
 			<div class="form-group">
   				<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Registrarse
   				</button>
-  				 </form>
+  			</div>	
+  			</form>
+  			<div>
             	<button type="submit" class="btn btn-default" onclick="location.href='paginaprincipal.php';">Cancelar
             	</button> 
             </div>
-       
 	</div>
 </body>
 </html>
