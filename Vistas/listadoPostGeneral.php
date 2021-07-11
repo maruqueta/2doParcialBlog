@@ -14,6 +14,9 @@
 
 	list($InicioPagina, $PostPorPagina ,$TotalPaginas)	= ControladorPost::PaginadoPost($pagina);
 
+	//echo "</br> INicio:" . $InicioPagina;
+	//echo "</br> PostPorpagina:" . $PostPorPagina;
+	//echo "</br> TotalPaginas:" . $TotalPaginas;
 	foreach ( ControladorPost::ListadoPost($InicioPagina, $PostPorPagina) as $fila){
 		//echo $fila -> TituloPost . " - " . $fila -> CuerpoPost . "<br>";
 	echo "<h3>" . $fila['TituloPost'] ."</h3> ". "</a> "." - " . $fila['CuerpoPost'] ." ++++ "."<br>";
